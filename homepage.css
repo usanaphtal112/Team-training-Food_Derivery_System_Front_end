@@ -45,6 +45,35 @@ html, body, main {
   .next {
     right: 10px;
   }
+  .footer{
+    background-color: #24262b;
+      padding: 70px 0;
+      color: white;
+      align-items: center;
+  }
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  ul{
+      list-style:none;
+      color: aliceblue;
+    }
+ 
+  .footer-col{
+     width: 25%;
+     padding: 0 15px;
+     text-align: center;
+  }
+  .mailing{
+      color: whitesmoke;
+      text-align: bottom;
+  }
+  .c-right{
+    text-align: center;
+
+  }
+
   
   
   @keyframes slideAnimation {
