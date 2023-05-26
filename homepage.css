@@ -3,11 +3,8 @@ html, body, main {
   padding: 0;
   height: 100%;
 }
-
-.nav{
-   background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(./Home_page_image/logo.png);
-  background-position: center;
-  background-color: rgb(64 62 62);
+.nav{  
+  background-color: rgb(36, 30, 30);
   background-size: cover;
   height: 35vh;
   width: auto;
@@ -15,7 +12,6 @@ html, body, main {
 
 }
 .navbar ul li{
-  text-decoration: none;
   list-style: none;
   font-size: 24px;
   font-family: 'Courier New', Courier, monospace;
@@ -25,12 +21,12 @@ html, body, main {
   text-decoration:none;
   font-family: 'Courier New', Courier, monospace;
   color:white;
-  margin-top:12%;
+  margin-top:0%;
   border:20px;
 }
 
 
-.menu ul li a:visited{
+.navbar ul li a:visited{
   color: hsl(18, 90%, 48%);
 
 }
@@ -145,4 +141,82 @@ ul{
   100% {
     transform: translateX(0);
   }
+}
+.inputform{
+    background-color: rgb(224, 238, 160);
+    width:30%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    position: relative;
+    padding: 30px;
+}
+.containers p{
+    font-size:20px;
+    text-align: center;
+}
+label{
+    font-size: 28px;
+    font-family: 'Times New Roman', Times, serif;
+    border: #000;
+    float: left;
+    margin-left:40px;
+}
+.containers h2{
+    text-align: center;
+}
+form{
+text-align: center;
+}
+input[type=password],input[type=email] ,input[type=tel]{
+  width: 90%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  text-align: center;
+  border-color:white;
+}
+input[type=submit] {
+  background-color: #e37f05;
+  color: white;
+padding:5px;
+border-color: #e37f05;
+border: 5%;
+width:20%;
+border-radius: 10px;
+font-size: 20px;
+}
+#message {
+  display:none;
+  background: #f1f1f1;
+  color: #000;
+  position: relative;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+#message p {
+  padding: 10px 35px;
+  font-size: 18px;
+}
+.valid {
+  color: rgb(12, 8, 5);
+}
+
+.valid:before {
+  position: relative;
+  left: -35px;
+  content: "&#10004;";
+}
+.invalid {
+  color: red;
+}
+
+.invalid:before {
+  position: relative;
+  left: -35px;
+  content: "&#10006;";
 }
