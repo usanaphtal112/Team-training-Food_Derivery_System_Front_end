@@ -79,28 +79,38 @@ html, body, main {
 }
 .footer{
   background-color: #24262b;
-    padding: 70px 0;
-    color: white;
+    padding: 10px;
+    color:white;
     align-items: center;
 }
+
 .row{
-  display: flex;
+   display: flex;
   flex-wrap: wrap;
+  font-size: larger;
+  padding-inline-start: 5%;
+ 
 }
 ul{
     list-style:none;
     color: aliceblue;
+    
+  }
+  ul li a{
+    list-style:none;
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+   
   }
 
-.footer-col{
-   width: 25%;
-   padding: 0 15px;
-   text-align: center;
-}
-.mailing{
-    color: whitesmoke;
-    text-align: bottom;
-}
+  .footer-col{   
+    width: 25%;
+    padding: 0 2px;
+    text-align: center;
+    font-size: larger;
+ }
+
 .c-right{
   text-align: center;
 
@@ -110,6 +120,56 @@ ul{
   height: 40px;
   margin-left: 200px;
 
+}
+.signup-container {
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  align-items: center;
+  background-color:white;
+  border-radius: 15px;
+  padding: 25px 10px;
+  box-shadow: 0 0 15px rgb(80, 79, 79);
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.signup-form input {
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  margin: 5px;
+  text-align: center;
+  font-size: 18px;
+  color: white;
+  background-color: rgb(46, 47, 48);
+}
+
+.signup-btns {
+  margin: 15px auto;
+  
+}
+.signup-button{
+  background-color: rgb(0, 0, 0);
+   color: white;
+   border: none;
+   padding: 5px 30px;
+   border-radius: 8px;
+   font-size: 18px;
+   cursor: pointer;
+   margin: 5px 20px;
+}
+
+.signup-form p {
+  color: red;
+  text-align: center;
+  display: none;
 }
 
 
