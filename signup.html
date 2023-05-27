@@ -1,84 +1,66 @@
-<HTML>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
- <sTYle>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="homepage.css">
+  </head>
+
+<body>
+  <header>
+    <header>
+      <div class="nav">
+      <div class="navbar">
+     <ul>
+     <li><img class="img-responsive" src="Home_page_image/justeat.png" style="padding:20px;"></li>
+         <li></li>
+     <li><a href="homepage.html"style="float:left;margin-left:5px;">Home</a></li>
+     <li><a href="product.html" style="float:left;margin-left:40px;">Product</a></li>
+     <li><a href="login.html" style="float:right;margin-right: 25px;">Login</a></li>
+ </ul>
+</div>
+ </div><br><br><br><br>
+    </header>
+    
+</header> 
+
+    <div class="signup-container">
+        <h2>Sign up here</h2>
+        <form action="" class="signup-form">
+          <p>sorry! Password didnot match !!! check again</p>
             
-*:focus {
-  outline: none;
-}
+            <input type="text" name="firstname" id="firstname" placeholder="First name">
+            <input type="text" name="lastname" id="lastname" placeholder="Last name">
+            <input type="email" name="email" id="email" placeholder="Enter Email">
+            <input type="tel" name="mobile" id="mobile" placeholder="Enter Phone-no">
+            <input type="password" name="pass" id="pass" placeholder="Enter Password">
+            <input type="password" name="confirm-pass" id="confirm-pass" placeholder=" confirm password">
 
-body {
-  margin: 0;
-  padding: 0;
-  background:#9ed3e781;
-  font-size: 16px;
-  color: #222;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 200;
-}
+            <div class="btns">
+                <button type="submit" class="signup-button">signup</button>
+            </div>
+            <h3>already have account?<a href="login.html">login</a></a></h3>
+          
 
-.SIGNUP {
-  position: absolute;
-  top: 0;
-  left: 0;
-  box-sizing: border-box;
-  padding: 40px;
-  width: 300px;
-  height: 400px;
-}
+        </form>
+    </div>
+ <script>
 
-h1 {
-  margin: 0 0 20px 0;
-  font-weight: 300;
-  font-size: 28px;
-}
-
-input[type="text"],input[type="tel"],input[type="password"] {
-  display: block;
-  box-sizing: border-box;
-  margin-bottom: 20px;
-  padding: 4px;
-  width: 100%;
-  height: 32px;
-  border: none;
-  border-bottom: 1px solid #AAA;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  font-size: 15px;
-  transition: 0.2s ease;
-  
-}
-
-
-input[type="submit"] {
-  margin-top: 10px;
-  width: 90px;
-  height: 32px;
-  background: #16a085;
-  border: none;
-  border-radius: 2px;
-  color: #FFF;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
-  text-transform: uppercase;
-  transition: 0.1s ease;
-  cursor: pointer;
-}
- </sTYle>
-    </head>
-   <body><form action="">
-        <div class="signup">
-          <h1>Sign up</h1>
-          <input type="text" name="Fullname" placeholder="Fullname" required />
-          <input type="text" name="email" placeholder="E-mail"  required/>
-          <input type="tel" name="mobile" placeholder="Phone number">
-          <input type="password" name="password" placeholder="Password" required/>
-          <input type="password" name="password2" placeholder="Retype password" required/>
-      
-          <input type="submit" name="signup_submit" value="Signup" />
-          <p>already have account?<a href="login.html">login</a></a></p>
-        </div>
-    </form>
+const pass = document.querySelector('#pass')
+const confirm_pass = document.querySelector('#confirm-pass')
+const msg = document.querySelector('p')
+const btn = document.querySelector('button')
+btn.addEventListener('click', (e) => {
+  if (pass.value != confirm_pass.value) {
+    e.preventDefault();
+    msg.style.display = "block"
+  }else{
+    alert('signup sucessfully')
+  }
+})
+    </script>
 </body>
-</HTML>
-    
-    
+</html>
